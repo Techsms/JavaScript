@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <input type="number" placeholder="Enter first number" id="1">
+       <input type="number" placeholder="Enter second number" id="2">
+       <button type="button" onclick="sum()">Submit</button>
+       <p id="pera"></p>
+    <script>
+
+       function sum(){
+        let a= parseInt(document.getElementById("1").value);
+        let b= parseInt(document.getElementById("2").value);
+       
+    //   document.write(a+b);
+          let c =  (a + b);
+         
+          document.getElementById('pera').innerHTML = c;
+         }
+    </script>
+</body>
+</html>
